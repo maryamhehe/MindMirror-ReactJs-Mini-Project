@@ -1,0 +1,6 @@
+MindJourney/node_modules/
+MindJourney/.env
+MindJourney/dist/
+MindJourney/build/
+Chatgpt-backend/node_modules/
+Chatgpt-backend/.env
