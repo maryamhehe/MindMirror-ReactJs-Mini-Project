@@ -5,9 +5,8 @@ require('dotenv').config();
 
 const app = express();
 
-// Allow CORS from your frontend deployed domain:
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*'  // safer: replace '*' with your frontend vercel URL
+  origin: process.env.FRONTEND_URL || '*'
 }));
 
 app.use(express.json());
@@ -38,6 +37,12 @@ app.post('/chat', async (req, res) => {
   }
 });
 
-// ❌ REMOVE app.listen()
-// ✅ Export the express app for Vercel
+// 👇 This allows local running:
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
 module.exports = app;

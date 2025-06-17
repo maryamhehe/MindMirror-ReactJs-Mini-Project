@@ -6,3 +6,5 @@ Chatgpt-backend/node_modules/
 Chatgpt-backend/.env
 .env
 .env.local
+node_modules
+
