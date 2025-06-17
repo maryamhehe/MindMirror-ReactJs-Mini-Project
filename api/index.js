@@ -11,7 +11,7 @@ app.use(cors({
 
 app.use(express.json());
 
-app.post('/chat', async (req, res) => {
+app.post('/api/chat', async (req, res) => {
   const { messages } = req.body;
 
   try {
