@@ -38,7 +38,7 @@ Be gentle, kind, and empathetic. After sharing a fact (only when asked), always 
   ];
 
   try {
-    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/chat`, {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
