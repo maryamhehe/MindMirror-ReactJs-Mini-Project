@@ -4,3 +4,5 @@ MindJourney/dist/
 MindJourney/build/
 Chatgpt-backend/node_modules/
 Chatgpt-backend/.env
+.env
+.env.local
